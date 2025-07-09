@@ -3,7 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page Design</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Login and Registration Page Design</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up">
+        <form>
+          <h1>Create Account</h1>
+          <div class="social_icons">
+            <a href="#" class="icon">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#" class="icon">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" class="icon">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="icon">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <span>Use your email address for registration</span>
+          <input type="text" placeholder="name" />
+          <input type="email" placeholder="email" />
+          <input type="password" placeholder="password" />
+          <button type="button">Sign Up</button>
+        </form>
+      </div>
+
+      <div class="form-container sign-in">
+        <form>
+          <h1>Sign In</h1>
+          <div class="social_icons">
+            <a href="#" class="icon">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#" class="icon">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" class="icon">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="icon">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <span>or use your email & password</span>
+          <input type="email" placeholder="email" />
+          <input type="password" placeholder="password" />
+          <button type="button">Sign In</button>
+        </form>
+      </div>
+
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>Welcome Back Bestie!</h1>
+            <p>Access the world of fun by entering your personal details</p>
+            <button class="hidden" id="login">Sign In</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1>Hello Friend!</h1>
+            <p>
+              Register with your personal details to access the world of fun
+            </p>
+            <button class="hidden" id="register">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      This project was coded with 💞 by <strong>Refilwe Motaung</strong> and is
+      <a href="#" target="_blank"> open-sourced on GitHub</a>
+    </footer>
+    <script src="javascript/index.js"></script>
+  </body>
 </html>
